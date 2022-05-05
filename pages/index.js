@@ -10,9 +10,11 @@ const Title = styled.h1`
 
 export default function Home() {
   return (
-    <>
-      <h1>Rick and Morty API Wiki</h1>
-      <StyledNavbar>
+    <div>
+      <h1>Rick and Morty API</h1>
+      <section></section>
+
+      <nav>
         <StyledButton>
           <Link href="/">
             <a>Home</a>
@@ -28,7 +30,7 @@ export default function Home() {
             <a>Episodes</a>
           </Link>
         </StyledButton>
-      </StyledNavbar>
-    </>
+      </nav>
+    </div>
   );
 }

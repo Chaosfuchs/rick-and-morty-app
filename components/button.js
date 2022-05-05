@@ -6,5 +6,6 @@ export const StyledButton = styled.button`
   font-size: 15px;
   padding: 1rem;
   border-radius: 10px;
+  height: 50px;
   width: 150px;
 `;

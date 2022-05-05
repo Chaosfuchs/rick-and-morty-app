@@ -1,11 +1,13 @@
 import Link from 'next/link';
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import { StyledButton } from '../components/button';
+import { StyledNavbar } from '../components/navbar';
 
 export default function Episodes() {
   return (
-    <>
+    <div>
       <h1>Episodes</h1>
-      <StyledNavbar>
+      <nav>
         <StyledButton>
           <Link href="/">
             <a>Home</a>
@@ -21,7 +23,7 @@ export default function Episodes() {
             <a>Episodes</a>
           </Link>
         </StyledButton>
-      </StyledNavbar>
-    </>
+      </nav>
+    </div>
   );
 }
