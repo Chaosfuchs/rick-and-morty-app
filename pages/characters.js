@@ -1,16 +1,10 @@
-import styled from 'styled-components';
 import Link from 'next/link';
 import { StyledButton } from '../components/button';
 
-const Title = styled.h1`
-  font-size: 50px;
-  color: ${({ theme }) => theme.colors.primary};
-`;
-
-export default function Home() {
+export default function Characters() {
   return (
     <>
-      <h1>Rick and Morty API Wiki</h1>
+      <h1>Characters</h1>
       <StyledButton>
         <Link href="/">
           <a>Home</a>
