@@ -5,10 +5,16 @@ const Title = styled.h1`
   color: ${({ theme }) => theme.colors.primary};
 `;
 
+
+
 export default function Home() {
   return (
     <>
-      <h1>Hello</h1>
+      <h1>Rick and Morty API Wiki</h1>
+      <div>
+        <span>Name:</span>
+        <span>Picture:</span>
+      </div>
     </>
   );
 }
