@@ -1,14 +1,13 @@
-import styled from "styled-components";
-
-const Title = styled.h1`
-  font-size: 50px;
-  color: ${({ theme }) => theme.colors.primary};
-`;
+import { Title } from '../components/header';
+import Navbar from '../components/navbar';
+import CharacterCard from '../components/card';
 
 export default function Home() {
   return (
     <>
-      <h1>Hello</h1>
+      <Title>Rick and Morty 4-Life</Title>
+      <section></section>
+      <Navbar></Navbar>
     </>
   );
 }
