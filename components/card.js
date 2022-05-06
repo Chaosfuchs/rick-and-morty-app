@@ -1,29 +1,5 @@
-import { useEffect, useState } from 'react';
 import styled from 'styled-components';
-
-function useFetch(url) {
-  const [data, setData] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-
-  console.log(data);
-
-  useEffect(() => {
-    if (url) {
-      fetch(url)
-        .then(response => response.json())
-        .then(json => {
-          setData(json);
-          setLoading(false);
-        })
-        .catch(error_ => {
-          setError(error_);
-        });
-    }
-  }, [url]);
-
-  return { data, loading, error };
-}
+import useFetch from '../hooks/fetch';
 
 export default function CharacterCard() {
   const { data, loading, error } = useFetch(
@@ -32,6 +8,8 @@ export default function CharacterCard() {
   console.log(data);
   return (
     <div>
+      {loading && <div>Loading…</div>}
+      {error && <div>{error.message}</div>}
       {data?.results.map(character => (
         <StyledCard>
           <ul>

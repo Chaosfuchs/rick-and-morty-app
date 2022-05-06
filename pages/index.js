@@ -6,9 +6,7 @@ export default function Home() {
   return (
     <>
       <Title>Rick and Morty API</Title>
-      <section>
-        <CharacterCard></CharacterCard>
-      </section>
+      <section></section>
       <Navbar></Navbar>
     </>
   );
