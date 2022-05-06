@@ -20,16 +20,6 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
-  nav {
-    display: flex;
-    position: fixed;
-    justify-content: space-around;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #290363;
-  }
-
   h1 {
     text-align: center;
     margin: 0;
