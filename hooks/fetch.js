@@ -9,17 +9,17 @@ export default function useFetch(url) {
 
   useEffect(() => {
     if (url) {
+      setLoading(true);
+      setError(null);
       fetch(url)
         .then(response => response.json())
         .then(json => {
           setData(json);
           setLoading(false);
-          setError(null);
         })
         .catch(error_ => {
           setError(error_);
           setLoading(false);
-          setData(null);
         });
     }
   }, [url]);

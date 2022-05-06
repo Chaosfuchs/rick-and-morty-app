@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const StyledButton = styled.button`
   background-image: url(/texture.png);
   color: #290363;
+  font-family: rickAndMortyFonts;
   font-size: 20px;
   font-weight: 800;
   text-align: center;

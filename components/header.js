@@ -5,7 +5,7 @@ export const Title = styled.h1`
   text-align: center;
   margin: 0;
   padding: 15px;
-  color: #0bf41b;
-  background-color: #ff9d14;
+  font-family: rickAndMortyFonts;
+  background-color: #290363;
   color: ${({ theme }) => theme.colors.primary};
 `;
