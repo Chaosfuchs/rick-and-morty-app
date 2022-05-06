@@ -1,18 +1,63 @@
-import styled from 'styled-components';
 import Link from 'next/link';
+import { Title } from '../components/header';
 import { StyledButton } from '../components/button';
 import { StyledNavbar } from '../components/navbar';
-
-const Title = styled.h1`
-  font-size: 50px;
-  color: ${({ theme }) => theme.colors.primary};
-`;
+import { StyledCard } from '../components/card';
 
 export default function Home() {
   return (
-    <div>
-      <h1>Rick and Morty API</h1>
-      <section></section>
+    <>
+      <Title>Rick and Morty API</Title>
+      <section>
+        <StyledCard>
+          <ul>
+            <li>Name: </li>
+            <li>Status: </li>
+            <li>Species: </li>
+            <li>Type: </li>
+            <li>Gender: </li>
+            <li>Origin: </li>
+            <li>Location: </li>
+          </ul>
+          <img></img>
+        </StyledCard>
+        <StyledCard>
+          <ul>
+            <li>Name: </li>
+            <li>Status: </li>
+            <li>Species: </li>
+            <li>Type: </li>
+            <li>Gender: </li>
+            <li>Origin: </li>
+            <li>Location: </li>
+          </ul>
+          <img></img>
+        </StyledCard>
+        <StyledCard>
+          <ul>
+            <li>Name: </li>
+            <li>Status: </li>
+            <li>Species: </li>
+            <li>Type: </li>
+            <li>Gender: </li>
+            <li>Origin: </li>
+            <li>Location: </li>
+          </ul>
+          <img></img>
+        </StyledCard>
+        <StyledCard>
+          <ul>
+            <li>Name: </li>
+            <li>Status: </li>
+            <li>Species: </li>
+            <li>Type: </li>
+            <li>Gender: </li>
+            <li>Origin: </li>
+            <li>Location: </li>
+          </ul>
+          <img></img>
+        </StyledCard>
+      </section>
 
       <StyledNavbar>
         <Link passHref href="/">
@@ -29,6 +74,6 @@ export default function Home() {
           </StyledButton>
         </Link>
       </StyledNavbar>
-    </div>
+    </>
   );
 }

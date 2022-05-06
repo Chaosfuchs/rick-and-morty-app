@@ -18,25 +18,15 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-
-  h1 {
-    text-align: center;
-    margin: 0;
-    padding: 10px;
-    color: #0bf41b;
-    background-color: #290363;
-  }
-
-  div {
     height: 100vh;
     display: grid;
-    grid-template-rows: 5rem 1fr 50px;
+    grid-template-rows: 4rem 1fr 4rem;
+    background-color:#f0ffa3;
   }
 `;
 
 const theme = {
   colors: {
-    primary: '#0070f3',
+    primary: '#0bf41b',
   },
 };

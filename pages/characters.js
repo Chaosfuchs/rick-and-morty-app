@@ -1,11 +1,12 @@
 import Link from 'next/link';
+import { Title } from '../components/header';
 import { StyledButton } from '../components/button';
 import { StyledNavbar } from '../components/navbar';
 
 export default function Characters() {
   return (
     <div>
-      <h1>Characters</h1>
+      <Title>Characters</Title>
       <StyledNavbar>
         <Link passHref href="/">
           <StyledButton as="a">Home</StyledButton>
