@@ -26,6 +26,10 @@ const GlobalStyle = createGlobalStyle`
   #__next {
     display: contents;
   }
+
+  h3 {
+    text-align: center;
+  }
 `;
 
 const theme = {

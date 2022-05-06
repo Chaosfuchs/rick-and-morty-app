@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 
 export const StyledButton = styled.button`
-  background-color: #049014;
+  background-image: url(/texture.png);
   color: #290363;
   font-size: 20px;
+  font-weight: 800;
   text-align: center;
   text-decoration: none;
   padding: 1rem;
