@@ -18,15 +18,18 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    height: 100vh;
+    min-height: 100vh;
     display: grid;
     grid-template-rows: 4rem 1fr 4rem;
     background-color:#f0ffa3;
+  }
+  #__next {
+    display: contents;
   }
 `;
 
 const theme = {
   colors: {
-    primary: '#0bf41b',
+    primary: '#6bffc6',
   },
 };
