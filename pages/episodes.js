@@ -11,14 +11,14 @@ export default function Episodes() {
   console.log(data?.results);
   return (
     <>
-      <Title>Episodes with</Title>
+      <Title>Episodes</Title>
       <div>
         {data?.results.map(character => (
-          <StyledDiv>
-            <h3>{character.name}</h3>
+          <StyledDiv key={character.id}>
+            <h3>With {character.name}</h3>
             <StyledList>
               {character.episode.map(episode => {
-                return <li>{episode}</li>;
+                return <li key={episode}>{episode}</li>;
               })}
             </StyledList>
           </StyledDiv>

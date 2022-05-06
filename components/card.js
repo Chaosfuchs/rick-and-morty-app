@@ -11,7 +11,7 @@ export default function CharacterCard() {
       {loading && <div>Loading…</div>}
       {error && <div>{error.message}</div>}
       {data?.results.map(character => (
-        <StyledCard>
+        <StyledCard key={character.id}>
           <ul>
             <li>Name:{character.name}</li>
             <li>Status:{character.status} </li>
