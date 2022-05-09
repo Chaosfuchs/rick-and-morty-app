@@ -21,6 +21,9 @@ export default function CharacterCard() {
             <li>Origin:{character.origin.name}</li>
             <li>Location:{character.location.name}</li>
           </ul>
+          <div>
+            <img src={character.image}></img>
+          </div>
         </StyledCard>
       ))}
     </div>

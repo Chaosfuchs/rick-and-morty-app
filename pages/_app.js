@@ -39,6 +39,14 @@ const GlobalStyle = createGlobalStyle`
     padding: 10px;
     margin: 5px;
   }
+
+  img {
+    width: 150px;
+    border-radius: 999px;
+    margin: 15px;
+    border: 3px solid green;
+  }
+
 `;
 
 const theme = {
