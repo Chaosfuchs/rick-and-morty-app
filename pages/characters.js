@@ -1,14 +1,12 @@
 import { Title } from '../components/header';
-import Navbar, { StyledNavbar } from '../components/navbar';
-import CharacterCard from '../components/card';
+import Navbar from '../components/navbar';
+import CharacterCard from '../components/characterCard';
 
 export default function Characters() {
   return (
     <>
       <Title>Characters</Title>
-      <section>
-        <CharacterCard></CharacterCard>
-      </section>
+      <CharacterCard />
       <Navbar></Navbar>
     </>
   );

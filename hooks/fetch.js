@@ -1,3 +1,4 @@
+import { resolveConfig } from 'prettier';
 import { useEffect, useState } from 'react';
 
 export default function useFetch(url) {
@@ -14,8 +15,10 @@ export default function useFetch(url) {
       fetch(url)
         .then(response => response.json())
         .then(json => {
-          setData(json);
-          setLoading(false);
+          setTimeout(() => {
+            setData(json);
+            setLoading(false);
+          }, 1000);
         })
         .catch(error_ => {
           setError(error_);
