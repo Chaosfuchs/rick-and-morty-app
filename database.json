@@ -1,17 +1,25 @@
 {
     "users": [
         {
-            "name": "Gregor",
-            "age": 18,
+            "id": "__UpbYev8o9_DY_n19CsI",
+            "name": "Anna",
+            "age": 19,
             "hobbies": [
-                "music",
-                "art",
-                "sport"
+                "reading"
             ]
         },
         {
+            "id": "NvtYM4uNXbC48kSe-QUND",
+            "name": "Marvin",
+            "age": 18,
+            "hobbies": [
+                "hacking"
+            ]
+        },
+        {
+            "id": "3YqVft7eujy3YqW6LkSDE",
             "name": "Anna",
-            "age": 19,
+            "age": 20,
             "hobbies": [
                 "reading"
             ]
