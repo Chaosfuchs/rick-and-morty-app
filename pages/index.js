@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Title>Rick and Morty 4-Life</Title>
-      <section></section>
+
       <Navbar></Navbar>
     </>
   );
