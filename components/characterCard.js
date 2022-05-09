@@ -3,7 +3,7 @@ import useFetch from '../hooks/fetch';
 
 export default function CharacterCard() {
   const { data, loading, error } = useFetch(
-    'https://rickandmortyapi.com/api/character'
+    'https://rickandmortyapi.com/api/character/?page=1'
   );
   console.log(data);
   return (

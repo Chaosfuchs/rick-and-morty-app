@@ -3,7 +3,7 @@ import useFetch from '../hooks/fetch';
 
 export default function EpisodeCard() {
   const { data, loading, error } = useFetch(
-    'https://rickandmortyapi.com/api/character'
+    'https://rickandmortyapi.com/api/character/?page=1'
   );
   console.log(data?.results);
   return (
@@ -34,7 +34,8 @@ const StyledList = styled.ul`
 const StyledDiv = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 15px;
+  margin: 10px;
+  padding: 0;
   background-color: #0bf41b;
   border-radius: 20px;
   border: 2px solid black;
@@ -46,7 +47,7 @@ const StyledContainer = styled.div`
   flex-direction: row-reverse;
   justify-content: flex-end;
   align-items: center;
-  margin: 0;
+  margin: 10px;
   padding: 0;
 
   img {

@@ -1,4 +1,3 @@
-import { resolveConfig } from 'prettier';
 import { useEffect, useState } from 'react';
 
 export default function useFetch(url) {
