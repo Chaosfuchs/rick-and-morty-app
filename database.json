@@ -1,0 +1,20 @@
+{
+    "users": [
+        {
+            "name": "Gregor",
+            "age": 18,
+            "hobbies": [
+                "music",
+                "art",
+                "sport"
+            ]
+        },
+        {
+            "name": "Anna",
+            "age": 19,
+            "hobbies": [
+                "reading"
+            ]
+        }
+    ]
+}
