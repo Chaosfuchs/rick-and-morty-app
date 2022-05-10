@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import useFetch from '../hooks/fetch';
 import StyledLoader from '../components/loader';
+import handleCollect from '../pages/api/collection';
 
 export default function CharacterCard() {
   const { data, loading, error } = useFetch(
@@ -50,8 +51,13 @@ export const StyledCard = styled.div`
   }
 
   button {
+    background-image: url(/rick.png);
+    background-size: cover;
+    background-position: 50%;
+    color: #290363;
     border-radius: 999px;
-    height: 50px;
+    height: 130px;
+    padding: 40px 5px 5px 5px;
     margin: 10px;
   }
 `;
