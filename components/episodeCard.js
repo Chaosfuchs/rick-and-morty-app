@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import useFetch from '../hooks/fetch';
+import StyledLoader from '../components/loader';
 
 export default function EpisodeCard() {
   const { data, loading, error } = useFetch(
@@ -8,7 +9,7 @@ export default function EpisodeCard() {
   console.log(data?.results);
   return (
     <>
-      {loading && <div>Loading…</div>}
+      {loading && <StyledLoader />}
       {error && <div>{error.message}</div>}
       {data?.results.map(character => (
         <StyledDiv key={character.id}>

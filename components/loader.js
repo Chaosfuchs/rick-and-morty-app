@@ -2,12 +2,14 @@ import styled from 'styled-components';
 
 export default function Loader() {
   return (
-    <StyledLoader className="loader">
-      <div className="ball"></div>
-      <div className="ball"></div>
-      <div className="ball"></div>
-      <span>Loading…</span>
-    </StyledLoader>
+    <>
+      <StyledLoader className="loader">
+        <div className="ball"></div>
+        <div className="ball"></div>
+        <div className="ball"></div>
+        <span>Loading…</span>
+      </StyledLoader>
+    </>
   );
 }
 
@@ -16,11 +18,13 @@ const StyledLoader = styled.div`
     width: 120px;
     height: 75px;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-end;
     justify-content: space-between;
   }
   .loader span {
+    color: white;
     font-size: 25px;
     text-transform: uppercase;
     margin: auto;
