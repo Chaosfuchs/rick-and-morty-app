@@ -34,4 +34,18 @@ async function removeUser(id) {
   console.log(newArray);
 }
 
-removeUser(''); // Aufruf der Remove Function
+// removeUser(''); // Aufruf der Remove Function
+
+async function updateUser(id, name, hobby) {
+  const data = await getDatabase();
+
+  data.users = data.users.map(user => {
+    if (user.id === id) {
+      user.name = name;
+      user.hobbies.unshift(hobby);
+    }
+    return user;
+  });
+  promises.writeFile('database.json', JSON.stringify(data, null, 4));
+}
+// updateUser();
