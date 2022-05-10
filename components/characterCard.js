@@ -4,7 +4,7 @@ import StyledLoader from '../components/loader';
 
 export default function CharacterCard() {
   const { data, loading, error } = useFetch(
-    'https://rickandmortyapi.com/api/character'
+    'https://rickandmortyapi.com/api/character/?page=2' // Page manuell ändern
   );
   console.log(data);
   return (
