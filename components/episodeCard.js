@@ -7,7 +7,7 @@ export default function EpisodeCard() {
   );
   console.log(data?.results);
   return (
-    <>
+    <main>
       {loading && <div>Loading…</div>}
       {error && <div>{error.message}</div>}
       {data?.results.map(character => (
@@ -23,7 +23,7 @@ export default function EpisodeCard() {
           </StyledList>
         </StyledDiv>
       ))}
-    </>
+    </main>
   );
 }
 
