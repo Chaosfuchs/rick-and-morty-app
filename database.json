@@ -1,24 +1,97 @@
 {
-  "products": [],
-
-  "users": [
-    {
-      "id": "__UpbYev8o9_DY_n19CsI",
-      "name": "Anna",
-      "age": 19,
-      "hobbies": ["reading"]
-    },
-    {
-      "id": "NvtYM4uNXbC48kSe-QUND",
-      "name": "Marvin",
-      "age": 18,
-      "hobbies": ["hacking"]
-    },
-    {
-      "id": "3YqVft7eujy3YqW6LkSDE",
-      "name": "Anna",
-      "age": 20,
-      "hobbies": ["reading"]
-    }
-  ]
+    "collection": [
+        {
+            "id": 81,
+            "name": "Crocubot",
+            "status": "Dead",
+            "species": "Animal",
+            "type": "Robot-Crocodile hybrid",
+            "gender": "Male",
+            "origin": {
+                "name": "unknown",
+                "url": ""
+            },
+            "location": {
+                "name": "Worldender's lair",
+                "url": "https://rickandmortyapi.com/api/location/4"
+            },
+            "image": "https://rickandmortyapi.com/api/character/avatar/81.jpeg",
+            "episode": [
+                "https://rickandmortyapi.com/api/episode/25"
+            ],
+            "url": "https://rickandmortyapi.com/api/character/81",
+            "created": "2017-11-30T14:23:41.053Z"
+        },
+        {
+            "id": 82,
+            "name": "Cronenberg Rick",
+            "status": "unknown",
+            "species": "Cronenberg",
+            "type": "",
+            "gender": "Male",
+            "origin": {
+                "name": "Cronenberg Earth",
+                "url": "https://rickandmortyapi.com/api/location/12"
+            },
+            "location": {
+                "name": "Earth (C-137)",
+                "url": "https://rickandmortyapi.com/api/location/1"
+            },
+            "image": "https://rickandmortyapi.com/api/character/avatar/82.jpeg",
+            "episode": [
+                "https://rickandmortyapi.com/api/episode/6",
+                "https://rickandmortyapi.com/api/episode/10"
+            ],
+            "url": "https://rickandmortyapi.com/api/character/82",
+            "created": "2017-11-30T14:28:54.596Z"
+        },
+        {
+            "id": 81,
+            "name": "Crocubot",
+            "status": "Dead",
+            "species": "Animal",
+            "type": "Robot-Crocodile hybrid",
+            "gender": "Male",
+            "origin": {
+                "name": "unknown",
+                "url": ""
+            },
+            "location": {
+                "name": "Worldender's lair",
+                "url": "https://rickandmortyapi.com/api/location/4"
+            },
+            "image": "https://rickandmortyapi.com/api/character/avatar/81.jpeg",
+            "episode": [
+                "https://rickandmortyapi.com/api/episode/25"
+            ],
+            "url": "https://rickandmortyapi.com/api/character/81",
+            "created": "2017-11-30T14:23:41.053Z"
+        }
+    ],
+    "users": [
+        {
+            "id": "__UpbYev8o9_DY_n19CsI",
+            "name": "Anna",
+            "age": 19,
+            "hobbies": [
+                "reading"
+            ]
+        },
+        {
+            "id": "NvtYM4uNXbC48kSe-QUND",
+            "name": "Marvin",
+            "age": 18,
+            "hobbies": [
+                "hacking"
+            ]
+        },
+        {
+            "id": "3YqVft7eujy3YqW6LkSDE",
+            "name": "Anna",
+            "age": 20,
+            "hobbies": [
+                "reading"
+            ]
+        }
+    ]
 }

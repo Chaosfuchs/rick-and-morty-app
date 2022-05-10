@@ -1,13 +1,25 @@
 import styled from 'styled-components';
 import useFetch from '../hooks/fetch';
 import StyledLoader from '../components/loader';
-import handleCollect from '../pages/api/collection';
 
 export default function CharacterCard() {
   const { data, loading, error } = useFetch(
     'https://rickandmortyapi.com/api/character/?page=5' // Page manuell ändern
   );
   console.log(data);
+
+  async function addToCollection(character) {
+    const res = await fetch('/api/collection', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(character),
+    });
+    const message = await res.json();
+    console.log(message);
+  }
+
   return (
     <div>
       {loading && <StyledLoader />}
@@ -26,7 +38,13 @@ export default function CharacterCard() {
           <div>
             <img src={character.image}></img>
           </div>
-          <button>Collect</button>
+          <button
+            onClick={() => {
+              addToCollection(character);
+            }}
+          >
+            Collect
+          </button>
         </StyledCard>
       ))}
     </div>
@@ -57,7 +75,7 @@ export const StyledCard = styled.div`
     color: #290363;
     border-radius: 999px;
     height: 130px;
-    padding: 40px 5px 5px 5px;
+    padding: 50px 5px 5px 5px;
     margin: 10px;
   }
 `;
