@@ -27,7 +27,7 @@ export default function Pages() {
 
   return (
     <>
-      <h1>Test</h1>
+      <h1>Test Paging</h1>
       <button disabled={previousDisabled} onClick={previousPage}>
         -
       </button>

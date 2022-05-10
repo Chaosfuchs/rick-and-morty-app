@@ -25,6 +25,7 @@ export default function CharacterCard() {
           <div>
             <img src={character.image}></img>
           </div>
+          <button>Collect</button>
         </StyledCard>
       ))}
     </div>
