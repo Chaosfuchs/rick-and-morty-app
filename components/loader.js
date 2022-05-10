@@ -2,40 +2,45 @@ import styled from 'styled-components';
 
 export default function Loader() {
   return (
-    <StyledLoader className="loader">
-      <div className="ball"></div>
-      <div className="ball"></div>
-      <div className="ball"></div>
-      <span>Loading…</span>
+    <StyledLoader>
+      <StyledBall></StyledBall>
+      <StyledBall></StyledBall>
+      <StyledBall></StyledBall>
+      <StyledSpan>Loading…</StyledSpan>
     </StyledLoader>
   );
 }
 
 const StyledLoader = styled.div`
-  .loader {
-    width: 120px;
-    height: 75px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    justify-content: space-between;
-  }
-  .loader span {
-    font-size: 25px;
-    text-transform: uppercase;
-    margin: auto;
-  }
-  .ball {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: white;
-    animation: bounce 0.5s alternate infinite;
-  }
-  .ball:nth-child(2) {
+  width: 120px;
+  height: 75px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: fixed;
+  top: 110px;
+  left: 120px;
+`;
+
+const StyledSpan = styled.span`
+  color: white;
+  font-size: 25px;
+  text-transform: uppercase;
+  margin: auto;
+`;
+
+const StyledBall = styled.div`
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: white;
+  animation: bounce 0.5s alternate infinite;
+
+  :nth-child(2) {
     animation-delay: 0.16s;
   }
-  .ball:nth-child(3) {
+  :nth-child(3) {
     animation-delay: 0.32s;
   }
   @keyframes bounce {

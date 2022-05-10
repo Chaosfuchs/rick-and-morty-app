@@ -1,14 +1,15 @@
 import styled from 'styled-components';
 import useFetch from '../hooks/fetch';
+import StyledLoader from '../components/loader';
 
 export default function CharacterCard() {
   const { data, loading, error } = useFetch(
-    'https://rickandmortyapi.com/api/character/?page=5'
+    'https://rickandmortyapi.com/api/character/?page=5' // Page manuell ändern
   );
   console.log(data);
   return (
     <div>
-      {loading && <div>Loading…</div>}
+      {loading && <StyledLoader />}
       {error && <div>{error.message}</div>}
       {data?.results.map(character => (
         <StyledCard key={character.id}>
