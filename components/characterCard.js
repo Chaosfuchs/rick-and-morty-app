@@ -41,4 +41,17 @@ export const StyledCard = styled.div`
   border-radius: 20px;
   border: 2px solid black;
   box-shadow: 3px 3px 3px grey;
+
+  img {
+    width: 150px;
+    border-radius: 999px;
+    margin: 15px;
+    border: 3px solid green;
+  }
+
+  button {
+    border-radius: 999px;
+    height: 50px;
+    margin: 10px;
+  }
 `;
