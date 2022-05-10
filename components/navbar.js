@@ -25,4 +25,5 @@ const StyledNavbar = styled.nav`
   left: 0;
   right: 0;
   background-color: #290363;
+  z-index: 0;
 `;

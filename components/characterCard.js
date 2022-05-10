@@ -3,7 +3,7 @@ import useFetch from '../hooks/fetch';
 
 export default function CharacterCard() {
   const { data, loading, error } = useFetch(
-    'https://rickandmortyapi.com/api/character'
+    'https://rickandmortyapi.com/api/character/?page=5'
   );
   console.log(data);
   return (
@@ -33,6 +33,7 @@ export default function CharacterCard() {
 export const StyledCard = styled.div`
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   margin: 15px;
   background-color: #0bf41b;
   border-radius: 20px;
