@@ -14,7 +14,7 @@ export default function CollectionCard() {
         {error && <div>{error.message}</div>}
         <h3>My collected Cards</h3>
         {data?.results.map(character => (
-          <StyledCollectedCard>
+          <StyledCollectedCard key={character._id}>
             <img src={character.image}></img>
             <p>{character.name}</p>
           </StyledCollectedCard>
