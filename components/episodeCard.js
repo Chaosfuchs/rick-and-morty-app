@@ -54,4 +54,10 @@ const StyledContainer = styled.div`
   img {
     width: 100px;
   }
+
+  h3 {
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+  }
 `;

@@ -77,5 +77,6 @@ export const StyledCard = styled.div`
     height: 130px;
     padding: 50px 5px 5px 5px;
     margin: 10px;
+    font-family: rickAndMortyFonts;
   }
 `;
