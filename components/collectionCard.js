@@ -4,7 +4,7 @@ import StyledLoader from '../components/loader';
 
 export default function CollectionCard() {
   const { data, loading, error } = useFetch(
-    'https://rickandmortyapi.com/api/character/?page=5'
+    'https://rickandmortyapi.com/api/character/?page=6'
   );
 
   return (
@@ -56,7 +56,7 @@ const StyledCollectedCard = styled.div`
   padding: 10px;
   background-color: #0bf41b;
   border-radius: 20px;
-  width: 130px;
+  width: 140px;
   height: 150px;
   box-shadow: 3px 3px 3px grey;
 
