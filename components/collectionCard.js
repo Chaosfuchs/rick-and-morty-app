@@ -10,9 +10,9 @@ export default function CollectionCard() {
   return (
     <div>
       <StyledCollectionContainer>
+        <h3>My collected Cards</h3>
         {loading && <StyledLoader />}
         {error && <div>{error.message}</div>}
-        <h3>My collected Cards</h3>
         {data?.results.map(character => (
           <StyledCollectedCard key={character._id}>
             <img src={character.image}></img>
@@ -30,16 +30,17 @@ const StyledCollectionContainer = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  overflow: auto;
   background-color: #f6bd60;
   border-radius: 20px;
   border: 2px solid black;
   box-shadow: 3px 3px 3px grey;
   margin: 10px;
-  height: 450px;
+  height: 440px;
 
   h3 {
     text-align: center;
-    font-size: 25px;
+    font-size: 22px;
     color: #290363;
     text-decoration: underline overline;
     font-family: rickAndMortyFonts;
