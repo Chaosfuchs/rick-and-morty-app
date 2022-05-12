@@ -5,7 +5,7 @@ import EpisodeCard from '../components/episodeCard';
 export default function Episodes() {
   return (
     <>
-      <Title>Episodes</Title>
+      <Title>Episodes with</Title>
       <EpisodeCard></EpisodeCard>
       <Navbar></Navbar>
     </>

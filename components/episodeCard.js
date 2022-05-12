@@ -4,7 +4,7 @@ import StyledLoader from '../components/loader';
 
 export default function EpisodeCard() {
   const { data, loading, error } = useFetch(
-    'https://rickandmortyapi.com/api/character/?page=3' // Page manuell ändern
+    'https://rickandmortyapi.com/api/character/?page=1' // Page manuell ändern
   );
   console.log(data?.results);
   return (
@@ -53,6 +53,9 @@ const StyledContainer = styled.div`
 
   img {
     width: 100px;
+    border-radius: 999px;
+    border: 2px solid green;
+    box-shadow: 3px 3px 3px grey;
   }
 
   h3 {
