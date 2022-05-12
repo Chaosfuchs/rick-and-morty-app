@@ -5,7 +5,7 @@ const CharacterSchema = new mongoose.Schema({
     /* The name of this character */
     type: String,
     required: [true, 'Please provide a name for this user.'],
-    maxlength: [20, 'Name cannot be more than 20 characters'],
+    maxlength: [50, 'Name cannot be more than 50 characters'],
   },
   image: {
     /* Characters image, if applicable */

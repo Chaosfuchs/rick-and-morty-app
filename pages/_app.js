@@ -34,12 +34,6 @@ const GlobalStyle = createGlobalStyle`
     display: contents;
   }
 
-  h3 {
-    text-align: center;
-    padding: 10px;
-    margin: 5px;
-  }
-
 `;
 
 const theme = {

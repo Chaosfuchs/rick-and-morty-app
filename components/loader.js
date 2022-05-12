@@ -21,6 +21,7 @@ const StyledLoader = styled.div`
   position: fixed;
   top: 110px;
   left: 120px;
+  font-family: rickAndMortyFonts;
 `;
 
 const StyledSpan = styled.span`

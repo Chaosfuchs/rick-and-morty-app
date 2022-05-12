@@ -17,7 +17,7 @@ export default function useFetch(url) {
           setTimeout(() => {
             setData(json);
             setLoading(false);
-          }, 3000);
+          }, 1500);
         })
         .catch(error_ => {
           setError(error_);
