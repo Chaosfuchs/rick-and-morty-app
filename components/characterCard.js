@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 import useFetch from '../hooks/fetch';
 import StyledLoader from '../components/loader';
+import useStore from '../hooks/useStore';
 
 export default function CharacterCard() {
-  const { data, loading, error } = useFetch(
-    'https://rickandmortyapi.com/api/character/?page=5' // Page manuell ändern
-  );
-  console.log(data);
+  const fetchSomething = useStore(state => state.fetchSomething);
+  const fetchedCharacters = useStore(state => state.fetchedCharacters);
+
+  // const { data, loading, error } = useFetch('https://rickandmortyapi.com/api/character/?page=5');
 
   async function addToCollection(character) {
     const res = await fetch('/api/collection', {
@@ -24,7 +25,7 @@ export default function CharacterCard() {
     <div>
       {loading && <StyledLoader />}
       {error && <div>{error.message}</div>}
-      {data?.results.map(character => (
+      {fetchedCharacters?.results.map(character => (
         <StyledCard key={character.id}>
           <ul>
             <li>Name:{character.name}</li>
