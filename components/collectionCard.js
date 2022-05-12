@@ -9,10 +9,10 @@ export default function CollectionCard() {
 
   return (
     <div>
+      {loading && <StyledLoader />}
+      {error && <div>{error.message}</div>}
       <StyledCollectionContainer>
         <h3>My collected Cards</h3>
-        {loading && <StyledLoader />}
-        {error && <div>{error.message}</div>}
         {data?.results.map(character => (
           <StyledCollectedCard key={character._id}>
             <img src={character.image}></img>
