@@ -2,25 +2,18 @@ import create from 'zustand';
 
 const useStore = create(set => {
   return {
-    fetchedCharacters: [null],
+    fetchedCharacters: null,
+    error: null,
+    loading: false,
     fetchSomething: url => {
-      if (url) {
-        setLoading(true);
-        setError(null);
-        const characters = response.json();
-        fetch(url)
-          .then(json => {
-            setTimeout(() => {
-              setData(json);
-              setLoading(false);
-            }, 1500);
-            set({ fetchedCharacters: json });
-          })
-          .catch(error_ => {
-            setError(error_);
-            setLoading(false);
-          });
-      }
+      fetch(url)
+        .then(response => response.json())
+        .then(json => {
+          setTimeout(() => {
+            set({ fetchedCharacters: json, loading: false });
+          }, 1500);
+        })
+        .catch(error_ => {});
     },
   };
 });
