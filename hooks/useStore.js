@@ -4,7 +4,7 @@ const useStore = create(set => {
   return {
     fetchedCharacters: null,
     error: null,
-    loading: false,
+    loading: true,
     fetchSomething: url => {
       fetch(url)
         .then(response => response.json())
