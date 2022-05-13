@@ -4,7 +4,7 @@ import StyledLoader from '../components/loader';
 
 export default function CollectionCard() {
   const { data, loading, error } = useFetch(
-    'https://rickandmortyapi.com/api/character/?page=6'
+    'https://rickandmortyapi.com/api/character/?page=1'
   );
 
   return (
